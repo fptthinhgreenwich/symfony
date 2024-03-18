@@ -1,0 +1,33 @@
+
+
+{% block body %}
+    {{ form_start(form) }}
+<div class="editp">
+<div class="fgn">
+    <div class="form-group">
+        <label class="nfg" for="name">Name:</label>
+        {{ form_widget(form.name,{
+            'attr':{
+                'class':'form-control',
+                'placeholder': 'Review name'
+            }
+        }) }}
+    </div>
+    </div>
+
+<div class="fgp">
+    <div class="form-group">
+        <label class="pfg" for="noidung">NoiDung:</label>
+        {{ form_widget(form.noidung,{
+            'attr':{
+                'class':'form-control',
+                'placeholder': 'Review noidung'
+            }
+        }) }}
+    </div>
+    </div>
+
+    <input type="submit" name="edit_review" value="Edit" class="btnbtn-primary"/>
+    {{ form_end(form) }}
+    </div>
+{% endblock %}

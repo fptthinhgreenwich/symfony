@@ -1,0 +1,14 @@
+
+{% block body %}
+        <div class="product-container">
+        {% for reviewItem in review %}
+                    <div class="infog2">
+                        <h3 class="h31g">{{ reviewItem.name }}</h3>
+                        <h3 class="h32g2">{{ reviewItem.noidung }}</h3>
+                    </div>
+       
+        </div>
+        
+    </div>
+    {% endfor %}
+{% endblock %}
